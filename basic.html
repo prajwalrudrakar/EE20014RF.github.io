@@ -8,10 +8,10 @@
        body
     {
 
-     background: #aa4b6b;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+     background-image: url("Train.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     opacity: 10;
 
 
     }
@@ -29,9 +29,11 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
     #main .btn:hover{background-color:#f26724; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
     -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
   .login{
-    background-image: url("kkk.jpg");
-    background-color: whitesmoke;
-    opacity: 0.8;
+    background: #aa4b6b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+opacity: 12;
+
   }
     .h-tag{
       font-family: Arial, Helvetica, sans-serif;
@@ -114,13 +116,13 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
             alert ('PASSWORD MAXIMUM LENGTH IS 12');
         }
         else if(phone == "" || !regPhone.test(phone)) {
-                    alert("Please enter valid phone number.");
-                    phone.focus();
-                    return false;
+                alert("Please enter valid phone number.");
+                phone.focus();
+                return false;
                 }
         else
         {                                           
-         alert('THANK YOU FOR LOGIN');
+         alert('THANK YOU FOR LOGIN AND YOU WILL RECIEVE AN EMAIL BEFORE YOUR JOURNEY STARTS');
         }
     }
     function clearFunc()
@@ -140,7 +142,7 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
     <div class="PRA">
         <div align="center" >
 
-        <h1>CREATE YOUR ACCOUNT</h1></div>
+        <h1>BOOK YOUR TICKET</h1></div>
     </div>
     
     
@@ -173,21 +175,28 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
     <td><input type="password" placeholder="Enter Mobile Number" id="A12" class="tb" /></td>
     </tr>
     <tr>
+    <td align="center">Enter Date of Journey :</td>
+    <td><input type="text" placeholder="Enter Date of journey" id="A4" class="tb" /></td>
+    </tr>
+
+    <tr>
     <td align="center">
         
-                SELECT YOUR COURSE STREAM
+                SELECT YOUR COACH PREFERENCE
                 <div align="center"></div>
                 <select type="text" value="" name="Subject">
-                    <option>ELECTRICAL</option>
-                    <option>MECHANICAL</option>
-                    <option>COMPUTER SCIENCE</option>
-                    <option>ELECTRONICS AND TELECOMMUNICATION</option>
-                    
+                    <option>FIRST SLEEPER</option>
+                    <option>SECOND SLEEPER</option>
+                    <option>FIRST TIER AC </option>
+                    <option>SECOND TIER AC </option>
+                    <option>THIRD TIER AC </option>
+                    <option>ECONOMY CLASS</option>  
                 </select>
             
             
     </td>
     </tr>
+
     <td></td>
     <tr>
     <td align="center">
